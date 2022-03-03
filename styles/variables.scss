@@ -1,0 +1,15 @@
+@import './functions.scss';
+
+$container-max-width: 1920px;
+$header-height: pxToRem(70);
+$header-horizontal-padding: pxToRem(60);
+$header-mobile-horizontal-padding: pxToRem(10);
+
+$breakpoints: (
+    xs: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1536px
+);

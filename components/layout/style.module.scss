@@ -1,0 +1,30 @@
+@import '@styles/functions.scss';
+@import '@styles/variables.scss';
+
+$drawerMenuMobileMaxWidth: pxToRem(280);
+
+.defaultLayout {
+    color: red;
+}
+
+.headerPage {
+    background-color: var(--color-white);
+    padding: pxToRem(20) $header-horizontal-padding;
+    height: $header-height;
+
+    .btnConnectWallet {
+        margin-left: pxToRem(20);
+    }
+
+    &Mobile {
+        padding: pxToRem(20) $header-mobile-horizontal-padding;
+    }
+}
+
+.drawerMenuMobile {
+    margin-top: $header-height;
+
+    :global .ant-drawer-content-wrapper {
+        max-width: $drawerMenuMobileMaxWidth;
+    }
+}

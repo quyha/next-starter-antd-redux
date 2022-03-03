@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+$size-base: 16;
+
+// Usage: pxToRem(20)
+@function pxToRem($value) {
+    $remValue: math.div($value, $size-base) * 1rem; 
+    @return $remValue;
+}

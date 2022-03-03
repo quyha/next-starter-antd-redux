@@ -1,0 +1,39 @@
+@import '~antd/dist/antd.min.css';
+@import './functions';
+
+:root {
+	--color-primary: #ff4d6d;
+    --color-secondary: #ffa99e;
+    --color-white: #ffffff;
+    --background-scrollbar-track: #eaeaea;
+    --background-scrollbar-thumb: #c0c0c0;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: pxToRem(8);
+    height: pxToRem(8);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-scrollbar-track);
+    border-radius: pxToRem(24);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-scrollbar-thumb);
+    border-radius: pxToRem(24);
+}
+
+.r-message {
+    .ant-message-custom-content {
+        display: flex;
+        align-items: center;
+        min-height: pxToRem(40);
+    }
+}

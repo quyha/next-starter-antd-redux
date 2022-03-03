@@ -1,0 +1,14 @@
+@import '@styles/functions';
+@import '@styles/mixins';
+
+.formWrapper {
+    width: pxToRem(600);
+
+    @include media-breakpoint-below(md) {
+        width: pxToRem(300);
+    }
+
+    .formButton {
+        height: pxToRem(60);
+    }
+}

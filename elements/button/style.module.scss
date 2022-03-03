@@ -1,0 +1,8 @@
+.rButton {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &:hover, &:focus, &:active {
+        background: var(--color-primary);
+    }
+}
